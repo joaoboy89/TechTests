@@ -9,9 +9,9 @@ package com.appweb.clothes.exception;
  * @author HP
  */
 
-public class TarifaNotFound extends Exception {
+public class PricesNotFound extends Exception {
     
-    public  TarifaNotFound(String errorMessage){
+    public  PricesNotFound(String errorMessage){
         super(errorMessage);
     }
 }

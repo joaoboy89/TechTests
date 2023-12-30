@@ -22,7 +22,7 @@ import lombok.Setter;
 @Entity
 @Table (name = "PRICES")
 
-public class TarifasSegunFechas {
+public class ClothesModel {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,18 +33,18 @@ public class TarifasSegunFechas {
         private Date endDate;
         private Long priceList;
         private Long productId;
-        private Long priority;
+        private int priority;
         private Double price;
         private String curr;
         
-        public TarifasSegunFechas(){}
+        public ClothesModel(){}
         
-        public TarifasSegunFechas(Long id, Long brandId,
+        public ClothesModel(Long id, Long brandId,
          Date startDate,
          Date endDate,
          Long priceList,
          Long productId,
-         Long priority,
+         int priority,
          Double price,
          String curr){
   
